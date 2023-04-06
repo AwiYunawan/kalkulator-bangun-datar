@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 40px;
+  scroll-behavior: smooth;
+}
+.title {
+  margin-top: 20px;
+  text-align: center;
+}
+.subtitle {
+  margin: 10px 0px;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu > a {
+  text-decoration: none;
+}
+.menu-segitiga {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+}
+.menu-jajargenjang {
+  padding: 10px 0px;
+}
+.rumus {
+  font-size: larger;
+  font-weight: bolder;
+  padding: 25px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.card {
+  border: blue solid;
+  padding: 40px 100px;
+  box-shadow: 0px 14px 5px -7px rgba(0, 0, 0, 0.3);
+}
+.form {
+  padding: 30px;
+}
+.form-hitung {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.form-hitung > input {
+  padding: 8px 4px;
+  border-radius: 6px;
+  width: 100%;
+}
+.submit {
+  padding: 6px 8px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+.reset {
+  padding: 6px 8px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  align-self: flex-end;
+}

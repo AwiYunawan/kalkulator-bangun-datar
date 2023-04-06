@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h1 class="title">Welcome Brader</h1>
+    <p class="subtitle">Ini adalah sebuah website kalkulator sederhana untuk menghitung luas dan keliling dari bangun datar segitiga dan jajargenjang. Selamat menggunakan fitur dari website ini!</p>
+    <header>
+      <nav>
+        <div class="menu">
+          <a href="#segitiga" class="menu-segitiga">Segitiga</a>
+          <a href="#jajargenjang" class="menu-jajargenjang">Jajar Genjang</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="segitiga">
+        <div class="card">
+          <div>
+            <h2>Luas Segitiga</h2>
+          </div>
+          <img src="asset/segitiga.jpg" alt="" />
+          <div>
+            <p>Rumus Luas Segitiga</p>
+            <p class="rumus">L = 1/2 x a x t</p>
+          </div>
+          <br />
+          <div>Dimana</div>
+          <p>L = Luas</p>
+          <p>a = Alas</p>
+          <p>t = Tinggi</p>
+          <div class="form">
+            <h1>Hitung Luas Segitiga</h1>
+            <br />
+            <form action="" class="form-hitung">
+              <input id="alas_luas_segitiga" type="number" name="alas-segitiga" placeholder="Nilai Alas" />
+              <input id="tinggi_luas_segitiga" type="number" name="tinggi-segitiga" placeholder="Nilai Tinggi" />
+              <button type="submit" class="submit" onclick="hitung_luas_segitiga();">Hitung</button>
+              <button type="reset" class="reset">Reset</button>
+            </form>
+            <p id="hasil1"></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h2>Keliling Segitiga</h2>
+          </div>
+          <img src="asset/segitiga.jpg" alt="" />
+          <div>
+            <p>Rumus Keliling Segitiga</p>
+            <p class="rumus">K = S1 + S2 + S3</p>
+          </div>
+          <br />
+          <div>Dimana</div>
+          <p>K = Keliling</p>
+          <p>S1 = sisi AB</p>
+          <p>S2 = sisi BC</p>
+          <p>S3 = sisi CA</p>
+          <div class="form">
+            <h1>Hitung Keliling Segitiga</h1>
+            <br />
+            <form action="" class="form-hitung">
+              <input id="s1_segitiga" type="number" name="s1-segitiga" placeholder="Nilai S1" />
+              <input id="s2_segitiga" type="number" name="s2-segitiga" placeholder="Nilai S2" />
+              <input id="s3_segitiga" type="number" name="s3-segitiga" placeholder="Nilai S3" />
+              <button type="submit" class="submit" onclick="return hitung_keliling_segitiga();">Hitung</button>
+              <button type="reset" class="reset">Reset</button>
+            </form>
+            <p id="hasil2"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="jajargenjang">
+        <div class="card">
+          <div>
+            <h2>Luas Jajargenjang</h2>
+          </div>
+          <img src="asset/jajargenjang.jpg" alt="" />
+          <div>
+            <p>Rumus Luas Jajargenjang</p>
+            <p class="rumus">L = a x t</p>
+          </div>
+          <br />
+          <div>Dimana</div>
+          <p>L = Luas</p>
+          <p>a = Alas</p>
+          <p>t = Tinggi</p>
+          <div class="form">
+            <h1>Hitung Luas Jajargenjang</h1>
+            <br />
+            <form action="" class="form-hitung">
+              <input id="alas_luas_jajargenjang" type="number" name="alas-jajargenjang" placeholder="Nilai Alas" />
+              <input id="tinggi_luas_jajargenjang" type="number" name="tinggi-jajargenjang" placeholder="Nilai Tinggi" />
+              <button type="submit" class="submit" onclick="hitung_luas_jajargenjang();">Hitung</button>
+              <button type="reset" class="reset">Reset</button>
+            </form>
+            <p id="hasil3"></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h2>Keliling Jajargenjang</h2>
+          </div>
+          <img src="asset/jajargenjang.jpg" alt="" />
+          <div>
+            <p>Rumus Keliling Jajargenjang</p>
+            <p class="rumus">K = 2 x ( a + b )</p>
+          </div>
+          <br />
+          <div>Dimana</div>
+          <p>K = Keliling</p>
+          <p>a = sisi a (alas)</p>
+          <p>b = sisi b (miring)</p>
+          <div class="form">
+            <h1>Hitung Keliling Jajargenjang</h1>
+            <br />
+            <form action="" class="form-hitung">
+              <input id="sisia_jajargenjang" type="number" name="sisia_jajargenjang" placeholder="Sisi a" />
+              <input id="sisib_jajargenjang" type="number" name="sisib-jajargenjang" placeholder="Sisi b" />
+              <button type="submit" class="submit" onclick="hitung_keliling_jajargenjang();">Hitung</button>
+              <button type="reset" class="reset">Reset</button>
+            </form>
+            <p id="hasil4"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
